@@ -1,0 +1,263 @@
+body{
+            margin:0;
+        }
+        .scrolly{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .scrolly_graphic{
+            flex: 0 0 70%;
+            height: 90vh;
+            padding: 0px;
+            position: sticky;
+            top: 0px;
+            z-index: 0;
+        }
+        .scrolly__graphic {
+            flex: 0 0 70%; /* Chart takes 75% of space */
+            /*margin-left: 12.5%; /* Margin = 1/8 of screen */
+            height: 90vh; /* make it taller for clarity */
+            /*background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
+            padding: 10px;
+            position: sticky;
+            top: 50px;
+        }
+        .scrolly__text {
+            flex: 0 0 30%; /* Text column is narrow */
+            margin-right: 2.5%;
+            display: flex;
+            flex-direction: column;
+            gap: 10vh; /*spacing for scrollytelling */
+            z-index: 2;
+        }
+        
+        .step {
+            font-size: 1.1rem;
+            /*padding: 20px;
+            background: rgba(255, 0, 0, 0.9);
+            border-radius: 2px;*/
+            height:80vh;
+            margin-bottom: 10vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+        }
+        .step.throwaway {
+            opacity: 0;         /* fully transparent */
+            pointer-events: none; /* avoid interaction */
+        }
+
+        #text_container{
+            background-color: rgba(255, 255, 255, 0.74);
+            padding: 1em;
+            border-radius: 4px;
+        }
+
+        #text_container .active {
+            background: rgba(226, 226, 226, 0.219);
+            fill: none;
+        }
+        .edge{
+            fill: none;
+        }
+        #full-tree-svg{
+            width:100%;
+            height:100%;
+            display:block;
+            overflow:visible;
+        }
+        .graphic_explanation {
+            position: absolute;
+            top: 0px;       /* distance from top of graphic */
+            right: 50%;     /* distance from right edge */
+            font-size: 0.9rem;
+            padding: 6px 10px;
+            border-radius: 0px;
+            background-color: rgba(26, 52, 109, 0.671);
+            text-align: center;
+            color:aliceblue;
+            max-width: 100%; /* optional to avoid stretching */
+        }
+body {
+            font-family: Montserrat;
+            margin: 0;
+            background: #f7f9fc;
+}
+
+.highlight.dark-green{
+    background-color: #26a02a; /* Green for beneficial */
+}
+
+.highlight.dark-red{
+    background-color: #a5231a; /* Red for harmful */
+}
+
+.highlight.gray{
+    background-color: #757575; /* Gray for neutral */
+}
+.highlight.boy-blue{
+    background-color: #a7e3ffff;
+    color:black;
+}
+.highlight.girl-pink{
+    background-color: #b80090;
+}
+.highlight.orange{
+    background-color: #ffaf80ff;
+    color: black;
+}
+
+.highlight{
+    background-color: #446db8;
+    border-radius: 5px;
+    padding: 0px 5px;
+    color:aliceblue;
+    display: inline-block;
+}
+
+.tooltip {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.884);
+            border: 1px solid #ccc;
+            padding: 8px;
+            font-size: 15px;
+            max-width: 300px;
+            line-height: 1.4em;
+            pointer-events: none;
+            opacity: 0;
+            
+        }
+
+.stack-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: -40px; /* creates overlap */
+}
+.image-container {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.image-container img {
+    display: block; /* remove inline gap */
+    width: auto;    /* keep original width */
+    height: auto;   /* keep original height */
+    max-width: 100%; /* prevents overflow on small screens */
+}
+
+/* Reveal effect */
+.image-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.image-container:nth-child(1) {
+    transform: rotate(-3deg);
+}
+
+.image-container:nth-child(2) {
+    transform: rotate(4deg) translateX(40px);
+}
+
+.image-container:nth-child(3) {
+    transform: rotate(-2deg) translateX(80px);
+}
+.image-container:nth-child(4) {
+    transform: rotate(3deg) translateX(80px);
+}
+
+header {
+  text-align: center;
+  padding: 15rem 1rem 10rem;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.8rem;
+  color: #0d47a1; /* Deep blue */
+  margin: 0;
+}
+
+header h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #0288d1;
+  margin-top: 0.5rem;
+}
+
+.intro, .narrative {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Color Highlights */
+a {
+  color: #1595ac; /* Coral accent for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+}
+figure.viz {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 900px;   /* keeps images from stretching too wide */
+}
+
+figure.viz img {
+  width: 100%;        /* responsive scaling */
+  height: auto;
+  border-radius: 8px; /* optional rounded corners */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+figure.viz figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+  font-style: italic;
+}
+.source {
+  display: block;
+  font-size: 0.8em !important;
+  color: #666;
+  text-align: right;        /* aligns source to the right edge */
+  margin-top: 2px;
+}

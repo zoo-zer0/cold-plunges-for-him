@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tree test</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://unpkg.com/scrollama"></script>
+        <script src = "full_tree.js"></script>
+        <script src="scroll-reveal.js"></script>
+        <script src="scrolly-short.js" defer></script>
+        <script src = "stacked_bar.js" defer></script>
+
+
+    </head>
+    <style>
+        
+        
+    </style>
+    <body>
+        <header>
+            <h1>Cold Plunges for Him</h1>
+            <h2>When the For You Page Isn’t for Me</h2>
+            <p>by Jooyoung Hyun</p>
+        </header>
+
+    <section class="intro">
+        <p>
+<strong>#Coldplunge</strong>—better known as cold showering—is everywhere on my <em>For You Page</em>. It seems like I’m not alone, as Google searches for <span class="highlight">“cold plunge”</span> have surged by <strong><span class="highlight">3862.5%</span></strong> since 2020. On YouTube, TikTok, Instagram, and Reddit, cold plunging has gone from niche recovery ritual to mainstream “biohack”.
+        </p>
+        <p>
+Endorsed by celebrities and my favorite wellness influencers, cold plunging is said to offer benefits like enhanced recovery, boosted mood, and weight loss, supposedly backed up by scientific research and numerous controlled trials.
+        <br><br><br><br>
+        </p>
+        <div class="stack-container">
+            <div class="image-container"><img src="./img/search_trends.png" alt="Google Search Trends"></div>
+            <div class="image-container"><img src="./img/benefit1.png" alt="Benefit 1"></div>
+            <div class="image-container"><img src="./img/benefit_influencer1.png" alt="Benefit 3"></div>
+            <div class="image-container"><img src="./img/benefit2.png" alt="Benefit 2"></div>
+        </div>
+        <p><br><br><br><br>
+This was enough to convince me to give it a try. But the moment I stepped in the tub, immersing myself in the ice cold water, there was no shivering, no promised calorie burn like the health blogs claimed; just a pure, overwhelming state of stress. As I endured what felt more painful than therapeutic, I thought to myself: maybe this trend isn't <em>for me.</em>
+        </p>
+        <p>
+Somehow, the scientific evidence behind the flashy YouTube thumbnails and influencer tubs may not be as inclusive as the marketing makes it seem.
+        </p>
+        <p>
+            In fact, out of 212 PubMed trials on the effects of cold therapy, more than <b><span class = "highlight">50%</span> excluded women from its methodology entirely</b>. 
+        </p>
+        <p>So how does advice based on male-centric studies become universal wellness wisdom? Why are female bodies left out of the research, and does this go beyond a mere harmless internet trend?</p>
+        <h1>The Flow of Information: from the Lab to Your Feed.</h1>
+        <p>Cold plunging didn’t land on my For You Page arbitrarily. It traveled through a lengthy, complex citation pipeline: from controlled trials in academic journals, to systematic reviews, to mainstream health blogs, to celebrity news and TikTok videos. Somewhere along that path, critical details—like who the studies were actually conducted on—disappeared. 
+        <br><br><br><br></p>
+    </section>
+        <div class="scrolly">
+            
+            <div class="scrolly__text">
+                <div class="step" data-step="0">
+                    <div id="text_container">
+                        I began tracing this pipeline through a story in <a href="">The Joseon Ilbo.</a> The article covered a Vogue video featuring Jennie from Blackpink introducing her nightly cold plunging routine.
+                    </div>
+                </div>
+                <div class="step" data-step="1">
+                    <div id="text_container">
+                        Each of these lines represent a quote from the bubble above, connected to the source of the claim, categorized by its stance on cold plunging: 
+                        <span class = "highlight dark-green">beneficial</span>, 
+                        <span class = "highlight dark-red">harmful</span>, 
+                        or <span class="highlight gray">neutral</span>. 
+                        <br><br>
+                        For example, <a href="">The Joseon Ilbo article</a> lists several benefits—such as reduced pain, improved circulation, and muscle recovery—citing <a href="">EveryDay Health</a>, A U.S.-based medical newsletter.
+                    </div>
+                </div>
+                <div class="step" data-step="2">
+                    <div id="text_container">
+                        <a href="">EveryDay Health</a> is generally reputable, with its articles medically reviewed and citations drawn from scientific journals, while remaining accessible to the general public.
+                    </div>
+                </div>
+                <div class="step" data-step="3">
+                    <div id="text_container">
+                        <a href="">EveryDay Health</a>’s article considers both the benefits and potential harms of cold plunging, but leans more <span class = "highlight dark-green">positive.</span>
+                        <br><br>For example, it mentions benefits such as reduced pain and fatigue, and improved recovery after high-intensity exercise.
+                    </div>
+                </div>
+                <div class="step" data-step="4">
+                    <div id="text_container">
+                        These claims are cited from a 2022 systematic review published in <a href="">Sports Medicine</a> that examined 52 studies. 
+                        <br><br>A <strong><span class="highlight orange">review paper</span></strong> is a type of scientific study that analyzes findings on a single topic by synthesizing results from multiple previous studies, represented here as an orange dot.
+                    </div>
+                </div>
+                <div class="step" data-step="5">
+                    <div id="text_container">
+                        Each cold-water-immersion trial (a controlled experiment designed to test specific effects) is represented as a dot, colored on a scale from 
+                        <span class = "highlight boy-blue">blue</span>  
+                        to 
+                        <span class="highlight girl-pink">pink</span>: 
+                        the pinker the dot, the greater the female participation rate.
+                        <br><br>You’ll notice a sea of blue dots. Out of those 52 studies, I had access to 32 trials. And out of those 32 trials, <br><strong><span class="highlight">22</span> excluded women entirely.</strong>
+                    </div>
+                </div>
+                <div class="step" data-step="6">
+                    <div id="text_container">
+                        And this isn’t unique to this one review article. 
+                    </div>
+                </div>
+                <div class="step" data-step="7">
+                    <div id="text_container">
+                        Let’s look at the 2025 review article looking into the doses of cold water immersion, which analyzes 55 studies. I could access 31 trials. 
+                        <br><br>
+                        And out of those 31 trials, <span class="highlight">23</span> excluded women entirely.
+                    </div>
+                </div>
+                <div class="step" data-step="8">
+                    <div id="text_container">
+                        Each review article, colored orange, shows a similar pattern.
+                    </div>
+                </div>
+                <div class="step throwaway">
+
+                </div>
+            </div>
+            <div class="scrolly_graphic">
+                <div class = "graphic_explanation">
+                    <em>Hover over a <strong>dot</strong> to see its source. <br>Hover over a <strong>line</strong> to read the quoted citation.</em>
+                </div>
+                <svg id = "full-tree-svg"></svg>
+            </div>
+        </div>
+    <section class = "narrative">
+        <p>
+            So when EveryDay Health claims “cold plunging may help relieve pain,” or “A cold water plunge may temporarily make you feel invigorated,” that conclusion largely reflects male physiology. At the research level, gender gaps are documented, if you go looking for them. At the newsletter level, this information is omitted. And by the time this advice hits celebrity news or your For You Page, the message becomes universal. 
+        </p>
+
+        <p>
+            But is this merely one slightly flawed citation chain, or part of a larger, systemic pattern? If gender gaps can disappear so easily on the way from trials to journals to celebrity news, what do things look like at the source? 
+        </p>
+                  <h2>Unpacking the Data</h2>
+
+    </section>
+    <section id="scrolly-short" class="scrolly" style="margin-top:6rem;">
+        <div class="scrolly__text">
+            <div class="step" data-step="0">
+                <div id="text_container">
+                    Stepping outside the headlines, I collected <b>426</b> PubMed articles, with abstracts available, that conducted clinical and randomized trials, tagged <span class="highlight">“cold-water-immersion”.</span>
+                </div>
+            </div>
+            <div class="step" data-step="1">
+                <div id="text_container">
+                    Non-human experiments, cold water immersion as a pain stimulus, and experiments focused on heated water immersion were excluded during the data clean up process.
+                </div>
+            </div>
+            <div class="step" data-step="2">
+                <div id="text_container">
+                    That left me with <b>212</b> articles, all with a focus on therapeutic and physiological effects of cold therapy. 
+                </div>
+            </div>
+            <div class="step" data-sstep="3">
+                <div id="text_container">
+                    And out of 212 studies,
+                    <br>
+                    <br><span class="highlight boy-blue">143</span> consisted only of men,
+                    <span class="highlight">69</span> had both male and female participants,
+                    <br>and only <span class="highlight girl-pink">11</span> were female-focused studies.
+                    <br>
+                    <br>Additionally, <span class="highlight gray">13</span> did not include any information about the gender of participants.
+                </div>
+            </div>
+            
+            <div class="step throwaway"></div>
+            </div>
+        <div class="scrolly_graphic" id="short-graphic">
+            <svg id="short-svg" width="100%" height="100%" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid meet"></svg>
+        </div>
+    </section>
+<section class="narrative">
+  <h2>Beyond Who Was Studied: What Was Tested?</h2>
+
+  <p>
+    Knowing <em>who</em> was included in cold water immersion research is only part of the story. 
+    The equally important question is: <strong>what exactly were researchers testing for?</strong>  
+    Beyond merely “Were women included?”, but “Does this specific method help <em>me</em> with <em>my specific needs</em>?”
+  </p>
+
+  <p>To explore this, studies were categorized along two dimensions<sup>1</sup>:</p>
+  <ul>
+    <li><strong>Method of cold therapy:</strong> full-body immersion, partial immersion, cryotherapy with nitrogen air, hot water immersion, and other variations.</li>
+    <li><strong>Intended effect:</strong> outcomes such as muscle recovery, athletic performance, diet, pain perception, clinical treatment, and more.</li>
+  </ul>
+  <p>
+    <span class="source"><strong><sup>1</sup>Note on methodology:</strong> These categories were developed after manually reviewing all 11 of the female-only research papers. 
+    A random sample of 59 additional studies was then categorized, for a total of 70. 
+    Studies with methods or effects outside the listed groups were classified as "etc."
+    The heatmap therefore reflects only this subset of the 212 available studies.
+    </span></p>
+  <figure class="viz">
+    <img src="./img/total_methods.png" alt="Grid of method + effect categories">
+    <figcaption>Total categories: each study is placed into one or more cells based on method and intended effect.</figcaption>
+  </figure>
+
+  <p>
+    Even within the same category, results often disagree. For example:
+  </p>
+
+  <blockquote>
+  <p>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/31652109/" target="_blank">
+      Cold-Water Immersion Does Not Accelerate Performance Recovery After 10-km Street Run: Randomized Controlled Clinical Trial, 2019
+    </a>
+  </p>
+  <p>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/27786541/" target="_blank">
+      Postexercise cold-water immersion improves intermittent high-intensity exercise performance in normothermia, 2016
+    </a>
+  </p>
+</blockquote>
+
+  <p>
+    Both of these trials examined whole-body cold-water immersion for athletic performance, yet they reached opposite conclusions. 
+    Differences in conditions—temperature, duration, or even interpretation—likely explain the contrast. 
+    This is the normal process of science: individual studies may conflict, but over time the body of work evolves, refining its methods and producing more nuanced insights.
+  </p>
+
+  <figure class="viz">
+    <img src="./img/methods.png" alt="Grid visualization showing gender ratios within categories">
+    <figcaption>
+      Each box is subdivided to show the ratio of male-only, mixed, and female-only studies within that category.
+    </figcaption>
+  </figure>
+
+  <p>
+    When we layer on sex representation, the imbalance becomes stark. 
+    Whole-body cold water immersion and cryotherapy—the two most common methods when influencers mention a "cold plunge routine"—are overwhelmingly male-focused. 
+    By contrast, 7 out of the 11 female-only studies observed the effects of partial-body immersion.
+  </p>
+
+  <figure class="viz">
+    <img src="./img/split methods.png" alt="Heatmaps of female representation across categories">
+    <figcaption>Three heatmaps comparing male, mixed, and female-only studies.</figcaption>
+  </figure>
+
+  <p>
+    Female-only research often begins from scratch. As the few rare female-only studies state:
+  </p>
+
+  <blockquote>
+  <p>
+    “To our knowledge,<strong> no study </strong>has examined the physiological responses or the recovery between PBC, CWI, and a control treatment in <strong>females</strong>.” 
+    <br>
+    <span class="source">
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7027844/" target="_blank">
+        Partial‐body cryotherapy (−135°C) and cold‐water immersion (10°C) after muscle damage in females, 2020</a>
+    </span>
+  </p>
+
+  <p>
+    “To our knowledge, existing studies have <strong>only been conducted on male subjects.</strong> Female participants are <strong>significantly underrepresented</strong> in sports and exercise medicine research, including studies related to CWI and HWI.”  
+    <br>
+    <span class="source">
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12057877/" target="_blank">
+        No acceleration of recovery from exercise-induced muscle damage after cold or hot water immersion in women: A randomised controlled trial, 2020</a>
+    </span>
+  </p>
+</blockquote>
+
+
+  <p>
+    Because there’s so little historical foundation, even a single new study is often the “first” of its kind, 
+    which makes it difficult to establish nuanced recommendations, like optimal temperatures, durations, or mechanisms, for women’s bodies.
+  </p>
+
+  <p>
+    Entire method and effect categories have <strong>no female-focused studies at all</strong>. 
+    For example, no research on female-focused research exists regarding cold immersion for hyperthermia treatment, sleep, or key physiological mechanisms like vasodilation, oxygenation, and parasympathetic activity, despite these being widely used terminology in wellness media. 
+    Moreover, when studies do discuss such mechanisms in their introduction, supported citations are older research that mostly reflect male physiology. 
+  
+    <span class="source">
+      <a href="https://pubmed.ncbi.nlm.nih.gov/8891513/" target="_blank">
+        Change in sympathetic activity, cardiovascular functions and plasma hormone concentrations due to cold water immersion in men, 1997
+    </a>
+    </span>
+  </p>
+
+  <p>
+    So while cold plunging spreads virally through celebrity culture and wellness newsletters, 
+    the underlying research base reflects a much deeper gender skew. 
+    And this imbalance is not unique to cold therapy: it mirrors a broader underrepresentation of female participants in sports and exercise medicine. 
+    Which means when I ask, <em>“Is cold plunging good for me?”</em>—the most honest answer is still: <strong>we don’t know yet.</strong>
+  </p>
+</section>
+
+
+
+
+
+    <div class="scrolly" id = "scrolly-bar">
+            <div class="scrolly__graphic">
+                <em>Hover over a <strong>block</strong> to see details.</em>
+
+                <h1>over time...</h1>
+                <div class="explanation">
+                </div>
+                <div id="stacked-bar-chart"></div>
+
+            </div>
+            <div class="scrolly__text">
+                <div class="step bar-step" data-step="0">
+While the number of cold water immersion studies published peaked around 2014, there has been research that included women throughout the years since 1998 (though only a minority).
+                </div>
+                <div class="step bar-step" data-step="1">
+2009 was a strange peak year for women-centered studies: four of the seven papers published were 100% female cohorts.
+                </div>
+                <div class="step bar-step" data-step="2">
+But reading them closely, most of these studies treated “female” only as a recruitment detail. The consideration of sex as a variable—or the hormonal context of women’s physiology—appears limited. 
+                </div>
+                <div class="step bar-step" data-step="3">
+The single outlier came from <a href="https://pubmed.ncbi.nlm.nih.gov/19370271/" target="_blank">Effect of stress on pain perception in young women, 2009</a> Ironically, it was the one psychology study that noted hormonal effects, while the three studies on muscle recovery studies said nothing at all. 
+                </div>
+                <div class="step bar-step" data-step="4">
+<p>They state,
+“Since all subjects were females, PPT and PTOL values may have been influenced by hormonal effect of the ovulatory cycle…[however] there are studies indicating that the <strong>influence of the ovulatory cycle on pain perception is minimal."</strong>
+<br><br>
+Perhaps one may take this as proof that sex differences are negligible.
+</p>
+                </div>
+                <div class="step bar-step" data-step="5">
+But recent studies have started to acknowledge this, as they are beginning to openly call out the underrepresentation of women in sports medicine studies, framing their designs as correctives to a male-dominated literature. 
+                </div>
+                <div class="step bar-step" data-step="6">
+                    <p>
+One 2025 trial begins its introduction with the importance of studying women. “Female participants are <strong>significantly underrepresented in sports and exercise medicine research,</strong> including studies related to CWI and HWI. <strong>Hormonal status (e.g., estrogen levels) and differences in body composition… could potentially contribute to divergent outcomes.</strong>”
+</p>
+<span class="source">
+<a href="https://pubmed.ncbi.nlm.nih.gov/40333546/" target="_blank">
+No acceleration of recovery from exercise-induced muscle damage after cold or hot water immersion in women: A randomised controlled trial, 2025
+</a>
+</span>
+                </div>
+                <div class="step bar-step" data-step="7">
+Another study of hamstring recovery in women explains its design as a corrective measure, directly motivated by the lack of female data.
+<span class="source">
+<a href="https://pubmed.ncbi.nlm.nih.gov/39665595/" target="_blank">
+Effect of cold-water immersion treatment on recovery from exercise-induced muscle damage in the hamstring”, 2025
+</a>
+</span>
+                </div>
+                <div class="step bar-step" data-step="8">
+                    <p>
+This trend of acknowledgement seems to have started in <span class = "highlight">2020,</span> by a study comparing the effect of various methods of cold therapy on muscle recovery in females. 
+“To our knowledge, no study has examined the physiological responses or the recovery between PBC, CWI, and a control treatment in females. This is consistent with the <strong>significantly under‐represented female participants in the wider sport and exercise medicine literature.”</strong>
+</p>
+<span class="source">
+<a href="https://pubmed.ncbi.nlm.nih.gov/31677292/" target="_blank">
+Partial-body cryotherapy (-135°C) and cold-water immersion (10°C) after muscle damage in females, 2020
+</a>
+</span>
+                </div>
+                <div class="step bar-step" data-step="9">
+It compared traditional cold-water immersion with cryotherapy, a treatment involving extremely low temperatures of nitrogen gas, and concluded that the physiological effects of these two methods were generally similar, noting, “These data <strong>contrast our previous findings in males</strong> utilizing the same exercise and recovery intervention.”
+                </div>     
+                <div class="step bar-step" data-step="10">
+                    <p>
+They acknowledged their limitations, “Due to logical constraints, the stage of menstrual cycle was not controlled for. Different estrogen levels of the participants might have contributed to the different results in the present study…In humans, the protective effect of estrogen levels and the influence of oral contraception on muscle damage are less clear, but it is <strong>likely</strong> that the protective <strong>effect of estrogen might have a significant impact</strong> on the outcome.” And encouraged future studies to take into account. 
+</p>                
+</div>           
+                <div class="step throwaway" data-step = "11">
+    blah blah blah
+                </div>
+        </div>
+    </div>
+<section class="narrative">
+    <p>
+Raised awareness of the lack of female-centered research in cold water immersion is part of a larger reckoning in sports and exercise science. Recent studies not only acknowledge that women have long been underrepresented, they also explain why: the technical difficulty of accounting for hormonal variability across the menstrual cycle. But if that variability is large enough to complicate experimental design, it’s also large enough to matter in practice. In other words, the very thing used as a reason to exclude women is itself evidence that we need more research—not less.
+
+    </p>
+Progress is happening. In July 2024, the <em>Journal of Science and Medicine in Sport</em> introduced a rule requiring authors of single-sex studies to provide explicit justification for excluding one gender. Male-only studies were still published in 2024, but the trajectory is shifting. By 2025, new female-focused studies are not just filling a gap; they are redefining the research agenda.
+<span class="source">
+<a href="https://pubmed.ncbi.nlm.nih.gov/38879218/" target="_blank">
+Addressing female underrepresentation in sport & exercise-related research: JSAMS policy for submitted studies (& subsequent considerations), 2024
+</a>
+</span>
+    <p>
+Cold plunges may have gone viral for their universal appeal, but the science shows us they are not universal, or not yet. The question now is whether research can keep pace with practice—whether the next wave of studies will reflect the people actually stepping into the ice bath.
+
+    </p>
+
+
+</section>
+
+    <footer>
+        <p>Created by Jooyoung Hyun | teehee</p>
+    </footer>
+    </body>
+</html>
